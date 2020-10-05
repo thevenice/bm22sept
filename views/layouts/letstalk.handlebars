@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branding Man</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<style>
+    :root{
+    {{!-- color: #fff; --}}
+    {{!-- background-color: #0079d8; --}}
+}
+#bodycolor{
+    margin:0;
+    padding:0;
+    background-color: #0079d8;
+}
+#sectionwrap{
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns:1fr;
+    font-family: system-ui;
+    transition: all 900ms ease-in;
+    background-color: #0079d8;
+    color:#fff;
+}
+#section1{
+padding:50px 20px;
+display:grid;
+/* width:500px; */
+grid-template-rows: 1fr;
+grid-template-columns: 1fr;
+row-gap: 10px;
+}
+section .symbol{
+    font-size:100px;
+}
+
+section .error{
+    /* text-transform: capitalize; */
+    font-size:1rem;
+}
+section .loading{
+    font-size:30px;
+}
+section .loading p{
+    margin:0;
+}
+
+#sectionhidden1{
+    display:none;
+    width:auto;
+    height:100vh;
+    transition: all 900ms ease-in;
+}
+#sectionhidden1 .logo2{
+    width:80vw;
+    {{!-- box-shadow: 5px 8px 14px 0 #0009; --}}
+    border-radius: 8px;
+    /* height:30; */
+}
+.sectionh1div1{
+    display: grid;
+    place-items: center;
+}
+.sectionh1div1 button{
+    color:#fff;
+    background:linear-gradient(45deg, #C62828, #ec3237);
+    margin-top:30px;
+    padding:10px 10vw;
+    border:1px solid transparent;
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    box-shadow: 5px 8px 14px 0 #0009;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media screen and (min-width:576px){
+  #sectionhidden1 .sectionh1div1 .logo2{
+      width:400px;
+  }  
+  #sectionhidden1 .sectionh1div1 button {
+    margin-top:30px;
+    padding:20px auto;
+    border:1px solid transparent;
+    border-radius: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    box-shadow: 5px 8px 14px 0 #0009;
+
+  }
+#section1{
+padding:50px 20px;
+display:grid;
+/* width:500px; */
+grid-template-rows: 1fr;
+grid-template-columns: 1fr;
+row-gap: 10px;
+}  
+section .error{
+    /* text-transform: capitalize; */
+    font-size:2rem;
+    padding-right:20vw;
+}
+
+}
+{{!-- form css starts --}}
+#sectionform{
+    display:none;
+    width:400px;
+  margin: 0 auto;}
+.container {
+  max-width: 400px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+background-color: #fff;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: transparent;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px 0;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #ec3237;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #ec3237;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+{{!-- form css ends --}}
+</style>
+</head>
+<body id="bodycolor">
+    <section id="sectionform">
+        <div class="container">  
+  <form id="contact" action="/api/contact" method="POST">
+    <h3>Contact Form</h3>
+    {{!-- <h4>Contact us for custom quote</h4> --}}
+    <fieldset>
+      <input 
+      placeholder="Your name"
+      name="name"
+       type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input 
+      placeholder="Your Email Address"
+      name="email"
+       type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input 
+      placeholder="Your Phone Number" 
+      name="phone"
+      type="tel" tabindex="3" required>
+    </fieldset>
+    
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+    
+  </form>
+</div>
+    </section>
+    {{!-- form ends --}}
+    <section id="sectionhidden1">
+        <div class="sectionh1div1">
+            <img class="logo2" src="img/logo2.png" alt="">
+            <button id="formopen">
+                Let's Talk  
+                <img
+                 style="padding-left:5px"
+                 width="40px"
+                 src="img/chatrounded.svg"/>
+            </button>
+        </div>
+    </section>
+    <section id="sectionwrap">
+        <div id="section1">
+        <div class="symbol">:(</div>
+        <div class="error">
+            Your brand ran into a problem and needs to re-evaluate. We're just loading the solution for you.     
+        </div>
+        <div class="loading">
+            <p><span class="counter" data-count="100%">0</span>%</p>
+        </div>  
+    </div>
+        <div></div>
+    </section>
+    <script>
+        $('.counter').each(function() {
+  var $this = $(this),
+      countTo = $this.attr('data-count');
+  
+  $({ countNum: $this.text()}).animate({
+    countNum: countTo
+  },
+
+  {
+
+    duration: 5000,
+    easing:'linear',
+    step: function() {
+      $this.text(Math.floor(this.countNum));
+    },
+    complete: function() {
+      $this.text(this.countNum);
+      //alert('finished');
+      document.getElementById("sectionhidden1").style.display="block";
+      document.getElementById("sectionwrap").style.display="none"
+      document.getElementById("bodycolor").style.backgroundColor="white"
+    }
+
+  });  
+  
+  document.getElementById("formopen").addEventListener("click", myFunction);
+
+function myFunction() {
+      document.getElementById("sectionhidden1").style.display="none";
+      document.getElementById("sectionwrap").style.display="none"
+      document.getElementById("sectionform").style.display="block"
+      document.body.style.backgroundImage = "url('img/coverbg.jpg')";
+      document.body.style.backgroundPosition = "center center')";
+      document.body.style.backgroundSize = "cover";
+  }
+
+});
+    </script>
+</body>
+</html>
